@@ -22,7 +22,7 @@ Ensure you have the following installed:
 #### **🔹 Clone the Repository**
 ```sh
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd Shopping_Cart
+cd shopping_cart
 ```
 
 #### **🔹 Install Dependencies**
