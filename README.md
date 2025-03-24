@@ -38,16 +38,7 @@ flutter run
 ## 📷 Screenshots  
 | Home Screen | Cart Screen |
 |-------------|-------------|
-| ![Home](C:\Users\ruchita\Desktop\shopping_cart\shopping_cart\screenshots\home.png) | ![Cart](C:\Users\ruchita\Desktop\shopping_cart\shopping_cart\screenshots\cart.png) |
-
-## 📦 Dependencies  
-| Package | Purpose |
-|---------|---------|
-| `flutter_bloc` | State management |
-| `firebase_auth` | User authentication |
-| `cloud_firestore` | Firestore database |
-| `provider` | Dependency injection |
-| `intl` | Formatting dates and currency |
+| ![Home](screenshots/cart.png) | ![Cart](screenshots/home.png) |
 
 ## 🏗️ Project Structure  
 ```
@@ -86,7 +77,7 @@ Contributions are welcome! To contribute:
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.  
 
 ## 👨‍💻 Author  
-- **Your Name**  
+- **RUCHITA GHATE**  
 - GitHub: Ruchita Ghate(https://github.com/RuchitaGhate)  
 
 ### 🌟 **Star this repo if you found it useful!** 🌟
