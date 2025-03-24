@@ -26,21 +26,15 @@ class Product {
     );
   }
 
-  // ✅ Getter for image URL
   String get imageUrl => image;
 
-  // ✅ Getter for final price after discount
   double get finalPrice => price * (1 - discountPercentage / 100);
 
-  // ✅ Getter for original price (before discount)
   double get originalPrice => price;
 
-  // ✅ Getter for discount (rounded to nearest int)
   int get discount => discountPercentage.round();
 
-  // ✅ Added `name` getter (alias for title)
   String get name => title;
 
-  // ✅ Added `oldPrice` getter (same as `originalPrice`)
   double get oldPrice => originalPrice;
 }

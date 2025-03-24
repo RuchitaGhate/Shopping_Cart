@@ -4,7 +4,6 @@ import '../models/product.dart';
 class CartNotifier extends StateNotifier<Map<Product, int>> {
   CartNotifier() : super({}); // Initialize an empty cart
 
-  // ✅ Add item to cart (Ensures UI rebuild)
   void addItem(Product product) {
     final newState = Map<Product, int>.from(state);
     newState[product] = (newState[product] ?? 0) + 1;
@@ -12,7 +11,6 @@ class CartNotifier extends StateNotifier<Map<Product, int>> {
     state = newState; // 🔹 Assign updated cart
   }
 
-  // ✅ Remove item from cart
   void removeItem(Product product) {
     final newState = Map<Product, int>.from(state);
     if (newState.containsKey(product) && newState[product]! > 1) {
@@ -20,11 +18,10 @@ class CartNotifier extends StateNotifier<Map<Product, int>> {
     } else {
       newState.remove(product);
     }
-    state = {}; // 🔹 Force UI rebuild
+    state = {};
     state = newState;
   }
 
-  // ✅ Getter for total price
   double get totalPrice {
     double total = 0.0;
     state.forEach((product, quantity) {
@@ -34,7 +31,6 @@ class CartNotifier extends StateNotifier<Map<Product, int>> {
   }
 }
 
-// ✅ Provide cart state globally (No changes)
 final cartProvider = StateNotifierProvider<CartNotifier, Map<Product, int>>((
   ref,
 ) {
